@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'ganglsxa_gangaschool',
         'USER': 'ganglsxa_gangaschool',
         'PASSWORD': 'ganglsxa_gangaschool',
-        'HOST': 'server121.web-hosting.com',
+        'HOST': 'server310.web-hosting.com',
         'PORT': '3306',
     }
     # 'default': {
