@@ -26,7 +26,7 @@ SECRET_KEY = '4m#k)c!_ua7&%=r^sh+8crse$w%1)t4z1*bob&80-0s^d08d%3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS =  ['samplepython.gangacottage.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS =  ['samplepython.gangacottage.com', 'localhost', '127.0.0.1', 'gangaschool.in']
 
 
 # Application definition
