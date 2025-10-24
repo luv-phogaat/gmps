@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<div class="container">
+    <div style="//border:double;//height:598px;">
+        <div
+            style="width:70%;float:left;//border:double;text-align:center;margin-top:50px;font-family: 'Nosifer', cursive;">
+            <h5 style="font-family: 'Nosifer', cursive;color:#FF8552">Don't worry you will be back on track in no time!
+            </h5>
+            <h1><span
+                    style="font-size:250px;font-weight:bolder;font-family: 'Nosifer', cursive;;color:#FB6107">404</span><small
+                    style="font-family: 'Nosifer', cursive;"> Error</small></h1>
+            <p style="color:#FF8552">Page doesn't exist or some other error occurred.</p>
+            <p style="color:#FF8552">Go back to Home Page.. <a href="index" style="text-decoration:none">Click Here</a>
+            </p>
+        </div>
+        <div style="float:left;//border:double;margin-top:200px;margin-left:100px">
+            <img src="{% static 'gmps/img/lost.png' %}" />
+        </div>
+    </div>
+
+</div>
+{% endblock %}

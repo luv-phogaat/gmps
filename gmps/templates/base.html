@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{% static 'gmps/img/icon.ico' %}">
+    {% block title %}<title>GMPS - Ganga Memorial Public School</title>{% endblock %}
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'gmps/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'gmps/css/bootstrap.min.css' %}">
+</head>
+<body>
+     <!-- header code -->
+     <div class="container-fluid" id="bgimg" >
+      {% include "menus.html" %}
+     {% block content %}
+     {% endblock %}
+    </div>
+     {% include "footer.html" %}
+     <!-- footer code -->
+    <script defer src="{% static 'gmps/js/googleapis.min.js' %}"></script>
+    <script async src="{% static 'gmps/js/bootstrap.min.js' %}"></script>
+</body>
+</html>

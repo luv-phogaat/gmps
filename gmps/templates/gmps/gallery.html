@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block content %}
+<!-- Content here -->
+<div class="container min-vh">
+  <h3 class="text-center mt-30">GALLARY</h3>
+  <div class="row">
+    {% for image in images %}
+    <div class="col-md-6">
+      <img
+        class="img-responsive img-thumbnail"
+        src="media/{{ image.image}}"
+        alt="gmps"
+        style="width: 100%; height: 350px"
+      />
+    </div>
+    {% endfor %} {% comment %}
+    <div class="col-md-4">
+      <img
+        class="img-responsive img-thumbnail"
+        src="{% static 'gmps/img/gallery1.JPG' %}"
+        alt="gmps"
+        style="width: 100%; height: auto"
+      />
+    </div>
+    <div class="col-md-4">
+      <img
+        class="img-responsive img-thumbnail"
+        src="{% static 'gmps/img/gallery2.JPG' %}"
+        alt="gmps"
+        style="width: 100%; height: auto"
+      />
+    </div>
+    {% endcomment %}
+  </div>
+</div>
+{% endblock %}
